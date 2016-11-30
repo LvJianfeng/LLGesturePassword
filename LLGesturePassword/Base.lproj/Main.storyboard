@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jnF-Vl-Sda">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="WAt-SU-C7M">
+            <objects>
+                <viewController id="jnF-Vl-Sda" customClass="ViewController" customModule="LLGesturePassword" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k16-xS-PgR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hnf-Q9-DgB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jk2-Bq-ADS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uHE-2Y-Zdn" customClass="LLGestureView" customModule="LLGesturePassword" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="146" width="375" height="375"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uHE-2Y-Zdn" secondAttribute="height" multiplier="1:1" id="WhJ-dS-TEo"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ll_ButtonWH">
+                                        <real key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ll_LineWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="ll_LineColor">
+                                        <color key="value" red="0.28715771359999998" green="1" blue="0.2265031451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="ll_BackgroundColor">
+                                        <color key="value" red="1" green="1" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ll_passwordLength">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="ll_PasswordPrefix" value="OO"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="ll_PasswordCharacterPrefix" value="HH"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="ll_ButtonXPadding">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uHE-2Y-Zdn" firstAttribute="width" secondItem="jk2-Bq-ADS" secondAttribute="width" id="2zZ-2s-Me4"/>
+                            <constraint firstItem="uHE-2Y-Zdn" firstAttribute="centerX" secondItem="jk2-Bq-ADS" secondAttribute="centerX" id="Dds-rq-har"/>
+                            <constraint firstItem="uHE-2Y-Zdn" firstAttribute="centerY" secondItem="jk2-Bq-ADS" secondAttribute="centerY" id="fr2-98-Gai"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="testView2" destination="uHE-2Y-Zdn" id="zEN-Fq-Tey"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M4h-DF-5Pj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39.200000000000003" y="-45.42728635682159"/>
+        </scene>
+    </scenes>
+</document>
